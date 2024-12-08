@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog }: any) => {
   const { title, desc, image, author, date, category } = blog;
   return (
     <div className="w-[820px] h-[794px] mt-11">
