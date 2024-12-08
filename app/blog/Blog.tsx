@@ -3,7 +3,7 @@ import Link from "next/link";
 const Blog = ({ blog }) => {
   const { title, desc, image, author, date, category } = blog;
   return (
-    <div className="w-[820px] h-[794px] my-6">
+    <div className="w-[820px] h-[794px] mt-11">
       <div className="blog-img w-[817px] h-[500px]">
         <img src={image} alt="blog1" className="object-cover w-full h-full" />
       </div>
