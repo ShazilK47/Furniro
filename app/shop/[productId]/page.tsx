@@ -5,11 +5,13 @@ import RelatedProducts from "./RelatedProducts";
 import TopSection from "./TopSection";
 
 interface Props {
-  params: { productId: string };
+  params: Promise<{
+    productId: string;
+  }>;
 }
 
-const page = ({ params }: Props) => {
-  const { productId } = params;
+const page = async ({ params }: Props) => {
+  const { productId } = await params;
   const productIdNumber = parseInt(productId, 10);
 
   return (
