@@ -10,12 +10,12 @@ interface Props {
 
 const page = ({ params }: Props) => {
   const { productId } = params;
+  const productIdNumber = parseInt(productId, 10);
 
-  console.log("productidget", productId);
   return (
     <div>
       <TopSection />
-      <ProductDetails productId={productId} />
+      <ProductDetails productId={productIdNumber} />
       <ProductDescription />
       <RelatedProducts />
     </div>

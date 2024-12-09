@@ -49,7 +49,7 @@ import Link from "next/link";
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 interface Props {
-  productId?: string;
+  productId?: number;
 }
 const ProductDetails = ({ productId }: Props) => {
   const products = [
@@ -127,10 +127,8 @@ const ProductDetails = ({ productId }: Props) => {
     },
   ];
 
-  const product = products.find((item) => item.id === Number(productId));
-  console.log("ProductID: ", productId);
-  console.log(typeof productId, productId);
-  console.log(product);
+  const product = products.find((item) => item.id === productId);
+
   if (!product) {
     return <p>Loading...</p>;
   }
