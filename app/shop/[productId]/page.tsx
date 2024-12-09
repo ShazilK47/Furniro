@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import ProductDescription from "./ProductDescription";
 import ProductDetails from "./ProductDetails";
 import RelatedProducts from "./RelatedProducts";
 import TopSection from "./TopSection";
 
 interface Props {
-  params: { productId: string };
+  params: { productId: any };
 }
 
 const page = ({ params: { productId } }: Props) => {
