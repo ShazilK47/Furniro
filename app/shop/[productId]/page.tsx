@@ -8,7 +8,9 @@ interface Props {
   params: { productId: string };
 }
 
-const page = ({ params: { productId } }: Props) => {
+const page = ({ params }: Props) => {
+  const { productId } = params;
+
   console.log("productidget", productId);
   return (
     <div>
