@@ -5,7 +5,7 @@ import RelatedProducts from "./RelatedProducts";
 import TopSection from "./TopSection";
 
 interface Props {
-  params: { productId: any };
+  params: { productId: string };
 }
 
 const page = ({ params: { productId } }: Props) => {
