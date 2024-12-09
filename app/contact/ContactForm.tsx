@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <div className="form flex flex-col gap-6 w-[635px] h-[923px]  p-14 pt-40">
+    <div className="form w-[400px] flex flex-col gap-6 md:w-[635px] h-[923px]  p-14 pt-40">
       <label htmlFor="name">Your Name</label>
       <input
         type="text"

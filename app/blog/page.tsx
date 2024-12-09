@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div>
       <Tophead pageName="Blog" />
-      <div className="p-24 flex gap-6">
+      <div className="p-6 sm:p-24 flex flex-col-reverse sm:flex-row gap-6">
         <BlogContainer />
         <SideBar />
       </div>

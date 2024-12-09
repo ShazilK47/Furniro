@@ -1,69 +1,128 @@
+import React from "react";
+
 const ProductComparisonTable = () => {
   return (
-    <div className="overflow-x-auto p-16">
-      <table className="w-full text-sm text-left">
-        <thead className="mb-4">
-          <tr>
-            <th className="py-2 text-black font-semibold text-[28px]">
-              General
-            </th>
-            <th className="py-2 text-gray-700 font-normal"></th>
-            <th className="py-2 text-gray-700 font-normal"></th>
-          </tr>
-        </thead>
+    <div className="w-full overflow-x-auto relative mb-10 p-6 md:p-10">
+      {/* Vertical Divider Lines */}
+      <div className="absolute left-[50%] top-0 bottom-0 w-[1px] bg-[#E8E8E8] hidden md:block"></div>
+      <div className="absolute left-[80%] top-0 bottom-0 w-[1px] bg-[#E8E8E8] hidden md:block"></div>
+
+      <table className="w-full text-left text-sm border-collapse hidden md:table">
+        {/* General Section */}
         <tbody>
-          {/* Row: Sales Package */}
           <tr>
-            <td className="py-1 font-medium text-gray-700">Sales Package</td>
-            <td className="py-1 text-gray-500">1 sectional sofa</td>
-            <td className="py-1 text-gray-500">
-              1 Three Seater, 2 Single Seater
+            <td colSpan={3} className="font-medium text-2xl px-4 py-2">
+              General
             </td>
           </tr>
-          {/* Row: Model Number */}
           <tr>
-            <td className="py-1 font-medium text-gray-700">Model Number</td>
-            <td className="py-1 text-gray-500">TFCLUBGRL65RH6</td>
-            <td className="py-1 text-gray-500">DTUBUGRL65G8</td>
+            <td className="px-4 py-2">Sales Package</td>
+            <td className="px-4 py-2">1 sectional sofa</td>
+            <td className="px-4 py-2">1 Three Seater, 2 Single Seater</td>
           </tr>
-          {/* Row: Secondary Material */}
           <tr>
-            <td className="py-1 font-medium text-gray-700">
-              Secondary Material
-            </td>
-            <td className="py-1 text-gray-500">Solid Wood</td>
-            <td className="py-1 text-gray-500">Solid Wood</td>
+            <td className="px-4 py-2">Model Number</td>
+            <td className="px-4 py-2">TFCBL1GRBL6SRHS</td>
+            <td className="px-4 py-2">DTUBL1GRBL568</td>
           </tr>
-          {/* Row: Configuration */}
+
+          {/* Product Section */}
           <tr>
-            <td className="py-1 font-medium text-gray-700">Configuration</td>
-            <td className="py-1 text-gray-500">L-shaped</td>
-            <td className="py-1 text-gray-500">L-shaped</td>
+            <td colSpan={3} className="font-medium text-2xl px-4 py-2">
+              Product
+            </td>
           </tr>
-          {/* Add more rows */}
           <tr>
-            <td className="py-1 font-medium text-gray-700">Dimensions</td>
-            <td className="py-1 text-gray-500">
-              Width: 265.32 cm
-              <br />
-              Height: 76 cm
-              <br />
-              Depth: 187.76 cm
-              <br />
-              Weight: 45 KG
+            <td className="px-4 py-2">Filling Material</td>
+            <td className="px-4 py-2">Foam</td>
+            <td className="px-4 py-2">Matte</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-2">Finish Type</td>
+            <td className="px-4 py-2">Bright Grey & Lion</td>
+            <td className="px-4 py-2">Bright Grey & Lion</td>
+          </tr>
+
+          {/* Dimensions Section */}
+          <tr>
+            <td colSpan={3} className="font-medium text-2xl px-4 py-2">
+              Dimensions
             </td>
-            <td className="py-1 text-gray-500">
-              Width: 265.32 cm
-              <br />
-              Height: 76 cm
-              <br />
-              Depth: 187.76 cm
-              <br />
-              Weight: 65 KG
+          </tr>
+          <tr>
+            <td className="px-4 py-2">Maximum Load Capacity</td>
+            <td className="px-4 py-2">280 KG</td>
+            <td className="px-4 py-2">300 KG</td>
+          </tr>
+
+          {/* Warranty Section */}
+          <tr>
+            <td colSpan={3} className="font-medium text-2xl px-4 py-2">
+              Warranty
             </td>
+          </tr>
+          <tr>
+            <td className="px-4 py-2">Origin of Manufacture</td>
+            <td className="px-4 py-2">India</td>
+            <td className="px-4 py-2">India</td>
           </tr>
         </tbody>
       </table>
+
+      {/* Mobile-Friendly Stacked Layout */}
+      <div className="md:hidden">
+        {/* General Section */}
+        <div className="mb-6">
+          <h2 className="font-medium text-xl mb-2">General</h2>
+          <div className="space-y-2">
+            <p className="flex justify-between">
+              <span className="font-semibold">Sales Package:</span>
+              <span>1 sectional sofa</span>
+            </p>
+            <p className="flex justify-between">
+              <span className="font-semibold">Model Number:</span>
+              <span>TFCBL1GRBL6SRHS</span>
+            </p>
+          </div>
+        </div>
+
+        {/* Product Section */}
+        <div className="mb-6">
+          <h2 className="font-medium text-xl mb-2">Product</h2>
+          <div className="space-y-2">
+            <p className="flex justify-between">
+              <span className="font-semibold">Filling Material:</span>
+              <span>Foam</span>
+            </p>
+            <p className="flex justify-between">
+              <span className="font-semibold">Finish Type:</span>
+              <span>Bright Grey & Lion</span>
+            </p>
+          </div>
+        </div>
+
+        {/* Dimensions Section */}
+        <div className="mb-6">
+          <h2 className="font-medium text-xl mb-2">Dimensions</h2>
+          <div className="space-y-2">
+            <p className="flex justify-between">
+              <span className="font-semibold">Maximum Load Capacity:</span>
+              <span>280 KG</span>
+            </p>
+          </div>
+        </div>
+
+        {/* Warranty Section */}
+        <div>
+          <h2 className="font-medium text-xl mb-2">Warranty</h2>
+          <div className="space-y-2">
+            <p className="flex justify-between">
+              <span className="font-semibold">Origin of Manufacture:</span>
+              <span>India</span>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

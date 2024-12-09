@@ -32,7 +32,7 @@ const blogs = [
 
 const BlogContainer = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col p-3">
       {blogs.map((blog) => {
         return <Blog key={blog.id} blog={blog} />;
       })}

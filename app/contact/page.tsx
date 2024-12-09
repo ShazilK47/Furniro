@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Features from "../components/Features";
 import Tophead from "../components/Tophead";
 import ContactForm from "./ContactForm";
@@ -15,10 +16,12 @@ const page = () => {
           Drop Us An Email.
           <br /> Our Staff Always Be There To Help You Out. Do Not Hesitate!
         </p>
-        <div className="contact-form flex justify-evenly ">
+        <div className="contact-form flex flex-col md:flex-row justify-evenly ">
           <div className="abt-info flex flex-col gap-6 w-[393px] p-6 mt-52">
-            <div className="info-1 flex gap-4">
-              <div>icon</div>
+            <div className="info-1 flex gap-4 ">
+              <div>
+                <img src="/icons/location.png" alt="location" className="w-8" />
+              </div>
               <div>
                 <h1 className="text-[24px] text-black font-medium">Address</h1>
                 <p className="font-normal text-[16px]">
@@ -27,7 +30,9 @@ const page = () => {
               </div>
             </div>
             <div className="info-2 flex  gap-4">
-              <div>icon</div>
+              <div>
+                <img src="/icons/phone.png" alt="phone" />
+              </div>
               <div>
                 <h1 className="text-[24px] text-black font-medium">Phone</h1>
                 <p className="font-normal text-[16px]">
@@ -36,7 +41,9 @@ const page = () => {
               </div>
             </div>
             <div className="info-3 flex  gap-4">
-              <div>icon</div>
+              <div>
+                <img src="/icons/time.png" alt="time" />
+              </div>
               <div>
                 <h1 className="text-[24px] text-black font-medium">
                   Working Time

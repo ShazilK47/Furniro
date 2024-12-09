@@ -3,11 +3,16 @@ import ProductDetails from "./ProductDetails";
 import RelatedProducts from "./RelatedProducts";
 import TopSection from "./TopSection";
 
-const page = () => {
+interface Props {
+  params: { productId: string };
+}
+
+const page = ({ params: { productId } }: Props) => {
+  console.log("productidget", productId);
   return (
     <div>
       <TopSection />
-      <ProductDetails />
+      <ProductDetails productId={productId} />
       <ProductDescription />
       <RelatedProducts />
     </div>

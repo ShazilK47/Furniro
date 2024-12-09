@@ -1,8 +1,10 @@
 const Features = () => {
   return (
-    <div className="features h-[270px] max-w-full bg-[#FAF3EA] flex justify-evenly items-center">
+    <div className="features h-auto  p-6 lg:h-[270px] max-w-full bg-[#FAF3EA] flex md:justify-center gap-10 items-center flex-wrap">
       <div className="feature1 flex gap-3">
-        <div className="h-[60px] w-[60px]"></div>
+        <div className="h-[60px] w-[60px]">
+          <img src="/icons/icon1.png" alt="icon1" />
+        </div>
         <div>
           <h1 className="text-2xl font-semibold text-[#242424] ">
             High Quality
@@ -13,7 +15,9 @@ const Features = () => {
         </div>
       </div>
       <div className="feature2 flex gap-3">
-        <div className="h-[60px] w-[60px]"></div>
+        <div className=" h-auto md:h-[60px] w-[60px]">
+          <img src="/icons/icon2.png" alt="icon2" />
+        </div>
         <div>
           <h1 className="text-2xl font-semibold text-[#242424] ">
             Warrenty Protection
@@ -22,7 +26,9 @@ const Features = () => {
         </div>
       </div>
       <div className="feature3 flex gap-3">
-        <div className="h-[60px] w-[60px]"></div>
+        <div className=" h-auto md:h-[60px] w-[60px]">
+          <img src="/icons/icon3.png" alt="icon3" />
+        </div>
         <div>
           <h1 className="text-2xl font-semibold text-[#242424] ">
             Free Shipping
@@ -33,7 +39,9 @@ const Features = () => {
         </div>
       </div>
       <div className="feature4 flex gap-3">
-        <div className="h-[60px] w-[60px]"></div>
+        <div className=" h-auto md:h-[60px] w-[60px]">
+          <img src="/icons/icon4.png" alt="icon4" />
+        </div>
         <div>
           <h1 className="text-2xl font-semibold text-[#242424] ">
             24 / 7 Support

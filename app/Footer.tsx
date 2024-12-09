@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
-    <footer className="bg-white w-full h-[505px] flex flex-col justify-between p-8">
+    <footer className="bg-white w-full h-[505px] flex flex-col justify-between p-8 ">
       {/* Top Section */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {/* Funiro Info */}
@@ -16,10 +18,18 @@ const Footer = () => {
         <div className="">
           <h3 className="font-semibold text-sm mb-10">Links</h3>
           <ul className="space-y-2 text-sm text-gray-600 flex flex-col gap-10">
-            <li>Home</li>
-            <li>Shop</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li>
+              <Link href="/">Home</Link>{" "}
+            </li>
+            <li>
+              <Link href="/shop">Shop</Link>
+            </li>
+            <li>
+              <Link href="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
 
@@ -34,13 +44,13 @@ const Footer = () => {
 
         <div>
           <h3 className="font-semibold text-sm mb-4">Newsletter</h3>
-          <div className="flex items-center  border-b-2  overflow-hidden">
+          <div className="flex items-center  gap-4    overflow-hidden">
             <input
               type="email"
               placeholder="Enter Your Email Address"
-              className="flex-grow p-2 text-sm text-gray-600 outline-none"
+              className="flex-grow p-2 text-sm border-b-2 border-black text-gray-600 outline-none"
             />
-            <button className=" border-b-2 text-black px-4 py-2 text-sm">
+            <button className=" border-b-2 border-black text-black px-4 py-2 text-sm">
               SUBSCRIBE
             </button>
           </div>
@@ -50,7 +60,7 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="border-t border-gray-300 pt-4 ">
         <p className="text-sm text-gray-500">
-          2023 Funiro. All rights reserved
+          2024 Funiro. All rights reserved
         </p>
       </div>
     </footer>

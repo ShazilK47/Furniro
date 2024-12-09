@@ -16,9 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased max-w-site bg-white m-auto font-poppins">
-        <Navbar />
-        {children}
-        <Footer />
+        <main>
+          <Navbar />
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );

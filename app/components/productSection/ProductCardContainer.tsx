@@ -17,7 +17,7 @@ const ProductCardContainer = ({ limit }: { limit?: number }) => {
       description: "Stylish Cafe Chair",
       price: "2.500.000",
       oldPrice: "3.500.000",
-      image: "/images/product2.png",
+      image: "/images/product3.png",
       discount: "-30%",
     },
     {
@@ -80,11 +80,13 @@ const ProductCardContainer = ({ limit }: { limit?: number }) => {
   const displayProducts = limit ? products.slice(0, limit) : products;
 
   return (
-    <div className="product-card w-full justify-center flex gap-6 flex-wrap pt-8">
-      {displayProducts.map((product) => {
-        return <ProductCard key={product.id} product={product} />;
-      })}
-    </div>
+    <>
+      <div className="product-card w-full justify-center flex gap-6 flex-wrap pt-8">
+        {displayProducts.map((product) => {
+          return <ProductCard key={product.id} product={product} />;
+        })}
+      </div>
+    </>
   );
 };
 
