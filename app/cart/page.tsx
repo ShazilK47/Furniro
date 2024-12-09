@@ -8,7 +8,6 @@ const page = () => {
     <>
       <Tophead pageName="Cart" />
       <div className="flex flex-col lg:flex-row items-start justify-center gap-6 p-6 mt-12 mb-12">
-        {/* Table Section */}
         <div className="w-full lg:w-[817px] overflow-x-auto">
           <table className="w-full border-collapse text-left min-w-[600px]">
             <thead className="bg-[#F9F1E7]">
@@ -46,7 +45,6 @@ const page = () => {
           </table>
         </div>
 
-        {/* Cart Total Section */}
         <div className="w-full lg:w-[393px] h-auto lg:h-[390px] bg-[#F9F1E7] p-6 rounded-md shadow-md flex flex-col justify-center">
           <h3 className="font-semibold mb-6 w-full text-center text-[24px] sm:text-[32px]">
             Cart Totals

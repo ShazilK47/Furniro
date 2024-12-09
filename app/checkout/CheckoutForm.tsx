@@ -5,8 +5,7 @@ const CheckoutForm = () => {
     <form className="max-w-lg mx-auto p-6 space-y-6">
       <h2 className="text-3xl font-bold">Billing Details</h2>
 
-      {/* First Name and Last Name */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label htmlFor="firstName" className="block text-sm font-medium mb-2">
             First Name
@@ -33,7 +32,6 @@ const CheckoutForm = () => {
         </div>
       </div>
 
-      {/* Company Name */}
       <div>
         <label htmlFor="companyName" className="block text-sm font-medium mb-2">
           Company Name (Optional)
@@ -47,7 +45,6 @@ const CheckoutForm = () => {
         />
       </div>
 
-      {/* Country/Region */}
       <div>
         <label htmlFor="country" className="block text-sm font-medium mb-2">
           Country / Region
@@ -64,7 +61,6 @@ const CheckoutForm = () => {
         </select>
       </div>
 
-      {/* Street Address */}
       <div>
         <label
           htmlFor="streetAddress"
@@ -81,7 +77,6 @@ const CheckoutForm = () => {
         />
       </div>
 
-      {/* Town/City */}
       <div>
         <label htmlFor="city" className="block text-sm font-medium mb-2">
           Town / City
@@ -95,7 +90,6 @@ const CheckoutForm = () => {
         />
       </div>
 
-      {/* Province */}
       <div>
         <label htmlFor="province" className="block text-sm font-medium mb-2">
           Province
@@ -111,7 +105,6 @@ const CheckoutForm = () => {
         </select>
       </div>
 
-      {/* ZIP Code */}
       <div>
         <label htmlFor="zipCode" className="block text-sm font-medium mb-2">
           ZIP Code
@@ -125,7 +118,6 @@ const CheckoutForm = () => {
         />
       </div>
 
-      {/* Phone */}
       <div>
         <label htmlFor="phone" className="block text-sm font-medium mb-2">
           Phone
@@ -139,7 +131,6 @@ const CheckoutForm = () => {
         />
       </div>
 
-      {/* Email */}
       <div>
         <label htmlFor="email" className="block text-sm font-medium mb-2">
           Email
@@ -153,7 +144,6 @@ const CheckoutForm = () => {
         />
       </div>
 
-      {/* Additional Information */}
       <div>
         <input
           id="additionalInfo"

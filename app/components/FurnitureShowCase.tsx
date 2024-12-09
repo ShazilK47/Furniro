@@ -3,7 +3,6 @@ import Image from "next/image";
 const FurnitureShowcase = () => {
   return (
     <div className="furniture-showcase mx-auto max-w-[1200px] h-[780px] py-10 relative">
-      {/* Heading */}
       <div className="text-center mb-8">
         <p className="text-lg font-medium text-gray-600">
           Share your setup with
@@ -11,9 +10,7 @@ const FurnitureShowcase = () => {
         <h1 className="text-4xl font-bold text-primary">#FuniroFurniture</h1>
       </div>
 
-      {/* Image Grid */}
       <div className="grid grid-cols-12 grid-rows-4 gap-4 h-[calc(100%-120px)]">
-        {/* Row 1 */}
         <div className="col-span-3 row-span-2 relative">
           <Image
             src="/images/furniture1.png"
@@ -42,7 +39,6 @@ const FurnitureShowcase = () => {
           />
         </div>
 
-        {/* Row 2 */}
         <div className="col-span-4 row-span-2 relative">
           <Image
             src="/images/furniture4.png"

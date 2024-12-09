@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 const RoomDesign = () => {
   return (
     <div className="w-full h-auto lg:h-[670px] bg-[#FCF8F3] flex flex-col lg:flex-row justify-center items-center gap-6 p-4 lg:p-0">
-      {/* Content Section */}
       <div className="content flex flex-col gap-3 w-full lg:w-1/3 text-center lg:text-left">
         <h1 className="text-[28px] sm:text-[32px] lg:text-[40px] font-bold text-headingLight">
           50+ Beautiful rooms inspiration
@@ -15,9 +15,7 @@ const RoomDesign = () => {
         </button>
       </div>
 
-      {/* Images Section */}
       <div className="images flex flex-col lg:flex-row gap-4 items-center">
-        {/* Main Design Image */}
         <div className="main-design">
           <img
             src="/images/design1.png"
@@ -26,7 +24,6 @@ const RoomDesign = () => {
           />
         </div>
 
-        {/* Other Designs */}
         <div className="others-design flex flex-col items-center">
           <div className="images">
             <img

@@ -75,7 +75,6 @@ const Navbar = () => {
 
   return (
     <div className="navbar w-full flex-col p-3 md:flex-row  h-[100px] flex justify-between items-center px-6 lg:px-20 text-black border-b-2">
-      {/* Logo */}
       <div className="logo flex items-center">
         <Image src="/logo.png" alt="logo" height={32} width={50} />
         <h1 className="xs:text-xl md:font-montserrat text-2xl lg:text-[34px] font-bold">
@@ -83,7 +82,6 @@ const Navbar = () => {
         </h1>
       </div>
 
-      {/* Navigation Links for Large Screens */}
       <div className="hidden lg:flex gap-20 nav-links text-[16px] font-medium">
         <Link href="/">Home</Link>
         <Link href="/shop">Shop</Link>
@@ -91,7 +89,6 @@ const Navbar = () => {
         <Link href="/contact">Contact</Link>
       </div>
 
-      {/* Icons */}
       <div className="flex gap-6 lg:gap-14">
         <Link href="">
           <AiOutlineUser size={24} />
@@ -106,7 +103,6 @@ const Navbar = () => {
           <AiOutlineShoppingCart size={24} />
         </Link>
 
-        {/* Menu Icon for Mobile */}
         <button
           onClick={toggleSidebar}
           className="block lg:hidden text-black focus:outline-none ml-4"
@@ -119,7 +115,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Sidebar Menu */}
       <div
         className={`fixed top-0 right-0 h-full w-2/4 bg-white shadow-lg transform transition-transform duration-300 overflow-y-auto z-50  ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
@@ -156,7 +151,6 @@ const Navbar = () => {
           isCartOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
-        {/* Close Button */}
         <div className="flex justify-between items-center px-4 py-3 border-b">
           <h2 className="text-lg font-semibold">Shopping Cart</h2>
           <button onClick={toggleCart} className="text-2xl">
@@ -164,7 +158,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Cart Items */}
         <div className="p-4">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-4">
@@ -205,7 +198,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Subtotal and Actions */}
         <div className="p-4 border-t">
           <p className="text-right mb-4 flex justify-between">
             <span> Subtotal:</span>{" "}
@@ -234,7 +226,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Overlay (when cart is open) */}
       {isCartOpen && (
         <div
           onClick={toggleCart}

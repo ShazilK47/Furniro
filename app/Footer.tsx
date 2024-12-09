@@ -3,9 +3,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-white w-full h-[505px] flex flex-col justify-between p-8 ">
-      {/* Top Section */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        {/* Funiro Info */}
         <div>
           <h2 className="font-bold text-[24px]">Funiro.</h2>
           <address className="not-italic text-sm text-gray-500 mt-4">
@@ -14,7 +12,6 @@ const Footer = () => {
           </address>
         </div>
 
-        {/* Links */}
         <div className="">
           <h3 className="font-semibold text-sm mb-10">Links</h3>
           <ul className="space-y-2 text-sm text-gray-600 flex flex-col gap-10">
@@ -57,7 +54,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Section */}
       <div className="border-t border-gray-300 pt-4 ">
         <p className="text-sm text-gray-500">
           2024 Funiro. All rights reserved

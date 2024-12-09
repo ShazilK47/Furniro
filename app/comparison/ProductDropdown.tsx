@@ -20,7 +20,6 @@ const ProductDropdown = () => {
     <div className="max-w-xs mx-auto space-y-2">
       <h2 className="text-lg font-semibold">Add A Product</h2>
       <div className="relative">
-        {/* Dropdown Button */}
         <button
           onClick={toggleDropdown}
           className="w-full px-4 py-2 text-left bg-yellow-600 text-white font-medium rounded-md flex justify-between items-center"
@@ -44,7 +43,6 @@ const ProductDropdown = () => {
           </svg>
         </button>
 
-        {/* Dropdown Options */}
         {isOpen && (
           <ul className="absolute w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg z-10">
             {products.map((product, index) => (

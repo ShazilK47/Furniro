@@ -55,7 +55,6 @@ const ProductComparisonTable = () => {
             <td className="px-4 py-2">300 KG</td>
           </tr>
 
-          {/* Warranty Section */}
           <tr>
             <td colSpan={3} className="font-medium text-2xl px-4 py-2">
               Warranty
@@ -63,15 +62,13 @@ const ProductComparisonTable = () => {
           </tr>
           <tr>
             <td className="px-4 py-2">Origin of Manufacture</td>
-            <td className="px-4 py-2">India</td>
-            <td className="px-4 py-2">India</td>
+            <td className="px-4 py-2">Pakistan</td>
+            <td className="px-4 py-2">Pakistan</td>
           </tr>
         </tbody>
       </table>
 
-      {/* Mobile-Friendly Stacked Layout */}
       <div className="md:hidden">
-        {/* General Section */}
         <div className="mb-6">
           <h2 className="font-medium text-xl mb-2">General</h2>
           <div className="space-y-2">
@@ -86,7 +83,6 @@ const ProductComparisonTable = () => {
           </div>
         </div>
 
-        {/* Product Section */}
         <div className="mb-6">
           <h2 className="font-medium text-xl mb-2">Product</h2>
           <div className="space-y-2">
@@ -101,7 +97,6 @@ const ProductComparisonTable = () => {
           </div>
         </div>
 
-        {/* Dimensions Section */}
         <div className="mb-6">
           <h2 className="font-medium text-xl mb-2">Dimensions</h2>
           <div className="space-y-2">
@@ -112,13 +107,12 @@ const ProductComparisonTable = () => {
           </div>
         </div>
 
-        {/* Warranty Section */}
         <div>
           <h2 className="font-medium text-xl mb-2">Warranty</h2>
           <div className="space-y-2">
             <p className="flex justify-between">
               <span className="font-semibold">Origin of Manufacture:</span>
-              <span>India</span>
+              <span>Pakistan</span>
             </p>
           </div>
         </div>

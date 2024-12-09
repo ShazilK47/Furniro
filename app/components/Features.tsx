@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const Features = () => {
   return (
     <div className="features h-auto  p-6 lg:h-[270px] max-w-full bg-[#FAF3EA] flex md:justify-center gap-10 items-center flex-wrap">

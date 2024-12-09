@@ -6,7 +6,6 @@ import StarRating from "../components/StarRating";
 const ProductComparison = () => {
   return (
     <div className="p-6 md:p-14 flex flex-col gap-10 lg:flex-row">
-      {/* View More Section */}
       <div className="view-more max-w-[223px] mx-auto lg:mx-0">
         <h1 className="text-[24px] md:text-[28px] font-black text-center lg:text-left">
           Go to product page for more products
@@ -20,9 +19,7 @@ const ProductComparison = () => {
         <hr className="w-[50%] mx-auto lg:mx-0 mt-4" />
       </div>
 
-      {/* Product Cards Section */}
       <div className="cards flex flex-col lg:flex-row gap-8">
-        {/* Card 1 */}
         <div className="card w-full max-w-[280px] h-[400px] mx-auto lg:mx-0">
           <div className="img-section bg-[#F9F1E7] h-[177px] rounded-lg flex justify-center items-center">
             <img
@@ -46,7 +43,6 @@ const ProductComparison = () => {
           </div>
         </div>
 
-        {/* Card 2 */}
         <div className="card w-full max-w-[280px] h-[400px] mx-auto lg:mx-0">
           <div className="img-section bg-[#F9F1E7] h-[177px] rounded-lg flex justify-center items-center">
             <img
@@ -71,7 +67,6 @@ const ProductComparison = () => {
         </div>
       </div>
 
-      {/* Product Dropdown Section */}
       <div className="mx-auto lg:mx-0">
         <ProductDropdown />
       </div>
