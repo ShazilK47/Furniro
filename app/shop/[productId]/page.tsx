@@ -7,6 +7,8 @@ interface Props {
   params: { productId: string };
 }
 
+// @ts-expect-error: Ignoring expected type mismatch error here
+
 const page = ({ params: { productId } }: Props) => {
   console.log("productidget", productId);
   return (
